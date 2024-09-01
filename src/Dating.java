@@ -23,9 +23,11 @@ public class Dating{
         Fx kan man være klog hvis ens iQ er større end 125, rig hvis ens indkomst er større end 700000 og ung hvis man er under 30.
         */
         //Skriv din kode her:
+        boolean klog = iQ >=125;
 
+        boolean rig = indkomst >=700000
 
-
+        boolean ung = alder <=30
 
 
 
@@ -43,9 +45,24 @@ public class Dating{
          på samme måde som det er gjort med variablen smuk.
          */
         //Skriv din kode her:
-
-
-
+        if (klog) {
+          System.out.println("Du er klog");
+        }
+        else {
+          System.out.println("Du er ikke intelligent");  
+        }
+        if (rig) {
+          System.out.println("Du er rig");
+        }
+        else {
+          System.out.println("Du er ikke rig");  
+        }
+        if (ung) {
+          System.out.println("Du er ung");
+        }
+        else {
+          System.out.println("Du er ikke anset som ung");  
+        }
 
 
 
@@ -56,7 +73,7 @@ public class Dating{
         Her skal du ændre koden på linjen nedenfor sådan at man er interessant hvis man både er smuk OG klog OG rig OG ung.
         Brug den boolske operator && til at kæde de boolske variable sammen.
          */
-        boolean interessant = smuk;
+        boolean interessant = (smuk && klog && rig && ung);
 
         if(interessant)
             System.out.println("Jeg er interesseret");
